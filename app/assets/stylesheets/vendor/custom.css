@@ -1,0 +1,52 @@
+.clear {
+  float:none;
+}
+
+
+.btn-injecta {
+  color: #48522D;
+  background-color: #B3CA7B;
+  border-color: #B3CA7B;
+}
+.btn-injecta:hover,
+.btn-injecta:focus,
+.btn-injecta:active,
+.btn-injecta.active,
+.open .dropdown-toggle.btn-injecta {
+  color: #fff;
+  background-color: #778459;
+  border-color: #778459;
+}
+.btn-injecta:active,
+.btn-injecta.active,
+.open .dropdown-toggle.btn-injecta {
+  background-image: none;
+}
+.btn-injecta.disabled,
+.btn-injecta[disabled],
+fieldset[disabled] .btn-injecta,
+.btn-injecta.disabled:hover,
+.btn-injecta[disabled]:hover,
+fieldset[disabled] .btn-injecta:hover,
+.btn-injecta.disabled:focus,
+.btn-injecta[disabled]:focus,
+fieldset[disabled] .btn-injecta:focus,
+.btn-injecta.disabled:active,
+.btn-injecta[disabled]:active,
+fieldset[disabled] .btn-injecta:active,
+.btn-injecta.disabled.active,
+.btn-injecta[disabled].active,
+fieldset[disabled] .btn-injecta.active {
+  background-color: #B3CA7B;
+  border-color: #B3CA7B;
+}
+.btn-injecta .badge {
+  color: #B3CA7B;
+  background-color: #fff;
+}
+.btn-shadow.btn-injecta {
+    box-shadow: 0 4px #798855;
+}
+.btn-shadow.btn-injecta:hover {
+  box-shadow: 0 4px #48522D;
+}
