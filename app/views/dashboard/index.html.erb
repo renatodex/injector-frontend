@@ -54,27 +54,15 @@
           </tr>
           </thead>
           <tbody>
-          <tr>
-              <td>1</td>
-              <td>Test Page</td>
-              <td>
-                <span class="label label-info pull-left">1</span>
-              </td>
-          </tr>
-          <tr>
-              <td>2</td>
-              <td>Other Page</td>
-              <td>
-                <span class="label label-danger pull-left">0</span>
-              </td>
-          </tr>
-          <tr>
-              <td>3</td>
-              <td>Home Page</td>
-              <td>
-                <span class="label label-info pull-left">2</span>
-              </td>
-          </tr>
+            <% @pages_sumary.each do |ps| %>
+              <tr>
+                  <td><%= ps.id %></td>
+                  <td><%= ps.name %></td>
+                  <td>
+                    <span class="label label-info pull-left"><%= ps.total_injections %></span>
+                  </td>
+              </tr>
+            <% end %>
           </tbody>
       </table>
       <header class="panel-heading">

@@ -38,4 +38,8 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  # Backend API
+  config.injector_backend_uri = "http://localhost:3000/api"
+  config.injector_backend_token = "abc123"
 end
