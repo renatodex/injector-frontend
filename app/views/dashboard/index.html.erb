@@ -88,27 +88,15 @@
           </tr>
           </thead>
           <tbody>
-          <tr>
-              <td>1</td>
-              <th>
-                  <span class="label label-warning">JS</span>
-              </th>
-              <td>Test Page</td>
-          </tr>
-          <tr>
-              <td>2</td>
-              <td>
-                <span class="label label-danger">HTML</span>
-              </td>
-              <td>Other Page</td>
-          </tr>
-          <tr>
-              <td>3</td>
-              <td>
-                <span class="label label-primary">CSS</span>
-              </td>
-              <td>Home Page</td>
-          </tr>
+            <% @injections_sumary.each do |is| %>
+              <tr>
+                  <td><%= is.id %></td>
+                  <td>
+                    <span class="label injection-type-<%= is.injection_type_name.downcase %>"><%= is.injection_type_name %></span>
+                  </td>
+                  <td><%= is.name %></td>
+              </tr>
+            <% end %>
           </tbody>
       </table>
       <header class="panel-heading">
