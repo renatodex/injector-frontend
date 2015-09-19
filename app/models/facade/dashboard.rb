@@ -25,5 +25,10 @@ module Facade
         arr
       end
     end
+
+    def self.totals_sumary
+      raw_response = Facade::Backend.api_get "/dashboards/sumary/totals"
+      ::Dashboard::Totals.new(raw_response)
+    end
   end
 end
