@@ -1,17 +1,5 @@
 Rails.application.routes.draw do
-  get 'pages/new'
-
-  get 'pages/create'
-
-  get 'pages/update'
-
-  get 'pages/edit'
-
-  get 'pages/destroy'
-
-  get 'pages/show'
-
-  get 'pages/index'
+  resources :pages
 
   root 'dashboard#index'
 
